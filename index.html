@@ -3,21 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" src="style.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
     <title>QR-Code</title>
 </head>
 
 <body>
 
     <section>
-        <input type="text" class="qr-text" placeholder="Enter QR Text">
-        <div id="qr-code"></div>
-        <div class="row">
-            <input type="color" class="light" value="#ffffff">
-            <input type="color" class="dark">
-            <select class="sizes">
+        
+        <div class="cosmetic-container">
+            <input class="cosmetic-container__text" type="text" placeholder="Enter QR Text">
+            <input class="cosmetic-container__light" type="color" value="#ffffff">
+            <input class="cosmetic-container__dark" type="color" >
+            <select class="cosmetic-container__sizes">
                 <option value="100">100x100</option>
                 <option value="200">200x200</option>
                 <option value="300">300x300</option>
@@ -30,19 +28,7 @@
                 <option value="1000">1000x0100</option>
             </select>
         </div>
-        <div class="action-container">
-            <a href="#" class="download btn" download="QRCode">
-                <span class="material-symbols-outlined">
-                    download
-                </span>
-            </a>
-            </button>
-            <button class="btn share-btn">
-                <span class="material-symbols-outlined">
-                    share
-                </span>
-            </button>
-        </div>
+        <div id="qr-code"></div>
     </section>
 
 
